@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="./js脚本文件夹/mock.js"></script>
+</head>
+<body>
+    <script>/*可以随机生成各种各样的数据，详情在  http://mockjs.com/examples.html  */
+        let testString=Mock.mock({
+            "string|1-10": "★"
+        });
+        console.log(testString);
+        let testNumber=Mock.mock({
+            "number|+1": 202
+        });
+        console.log(testNumber);
+        let testBoolean=Mock.mock({
+            "boolean|1": true
+        });
+        console.log(testBoolean);
+        let testObject=Mock.mock({
+            "object|2-4": {/*从下面要2到4个*/
+                "310000": "上海市",
+                "320000": "江苏省",
+                "330000": "浙江省",
+                "340000": "安徽省"
+            }
+        });
+        console.log(testObject);
+    </script>
+</body>
+</html>

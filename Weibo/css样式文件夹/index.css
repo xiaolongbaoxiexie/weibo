@@ -1,0 +1,686 @@
+/*index.less中写的东西会自动更新到index.css里*/
+*{
+    padding: 0;
+    margin: 0;
+}
+#header{
+    width: 100%;
+    height: 270px;
+    
+}
+#header video{
+    width: 100%;
+    height: 270;
+    position: absolute;
+    z-index: 0;
+}
+.header-center{
+    width: 1130px;
+    height: 270;
+    margin: 0 auto;
+    background-color: yellow;
+    position: relative;
+}
+
+#niubi{
+    font-size: 40px;
+    letter-spacing: 2px;
+    color: #eee;
+    position: absolute;
+    top: 65px;
+    left: 495px;
+    font-style: italic;
+}
+
+#span2{
+    font-size: 35px;
+    
+    letter-spacing: 2px;
+    color: #eee;
+    position: absolute;
+    top: 60px;
+    left: 548px;
+    font-style: italic;
+}
+#span3{
+    font-size: 14px;
+    
+    color: #eee;
+    position: absolute;
+    top: 98px;/*定位到距离顶部30%*/
+    left: 550px;
+    font-style: italic;
+}
+.header-center-input{
+    width: 704px;
+    height: 48px;
+    border-color: -internal-light-dark(rgb(118, 118, 118), rgb(133, 133, 133));
+    position: absolute;
+    top: 140px;
+    left: 50%;
+    margin-left: -352px;
+ 
+ }
+ .header-center-input-form:focus{
+    border-top-color: #ff8200 20px solid;
+ }
+ .header-center-input-icon{
+     width: 54px;
+     height: 46px;
+     border: 1px solid #fff;
+     background-color: #fff;
+     text-align: center;
+     line-height: 46px;
+     border-radius: 30px 0 0 30px;
+     float: left;
+     
+ }
+ .header-center-input-icon:focus{
+     border: #ff9406;
+ }
+ .header-center-input-icon span{
+    border-color: #ff8200;
+    border-right: #eee;
+    font-size: 27px;
+    color: rgb(131, 131, 131);
+ }
+ .header-center-input-form{
+    width: 565px;
+    height: 46px;
+    border: 1px solid #fff;
+    float: left;
+    color: #666;
+    line-height: 46px;
+    font-size: 22px;
+
+ }
+ .header-center-input-form:focus{
+    border-color: #ff8200;
+    border-left: #eee;
+ }
+ 
+ .header-center-input-search{
+     width: 75px;
+     height: 47px;
+     border: 1px solid #ff8200;
+     background-color: #ff8200;
+     color: #fff;
+     line-height: 44px;
+     font-size: 22px;
+     float: left;
+     border-radius: 0 30px 30px 0;
+     text-align: center;
+ }
+ .header-center-input-search:hover{
+     background-color: #ff5900;
+     border: 1px solid #ff5900;
+ }
+#nav{
+    width: 100%;
+    height: 57px;
+    background-color: #fff;
+    border-top: 3px solid #ff8200;/*最上面的黄线*/
+    position: fixed;
+    top: 0;
+    display: none;
+    z-index: 20;
+}
+#nav .nav-center{
+    width: 1340px;
+    height: 57px;
+    background-color: #fff;
+    /*自动居中*/
+    margin: 0 auto;
+    
+}
+.nav-center-logo{
+    width: 127px;
+    height: 43px;
+    float: left;
+}
+.nav-center-logo img{
+    width: 90px;
+    margin-top: 12px;
+    margin-left: 40px;
+}
+.nav-center-search{
+    width: 200px;
+    height: 32px;
+    float: left;
+    margin-top: 12.5px;
+    margin-left: 20px;
+}
+.nav-center-search div{
+    width: 32px;
+    height: 32px;
+    border: 1px solid #eee;
+    border-radius: 15px 0 0 15px;
+    background-color: #eee;
+    text-align: center;
+    line-height: 32px;
+    font-size: 20px;
+    color: #000;
+    font-weight: 500;
+    float: left;
+}
+.nav-center-search input{
+    width: 128px;
+    height: 34px;
+    float: left;
+    border: none;
+    background-color: #eee;
+    
+}
+.nav-center-search input:focus .content{
+    display: block;
+}
+.nav-center-search .radius{
+    border-radius: 0 15px 15px 0;
+}
+.nav-center-search .content{
+    background-color: #fff;
+    width: 200px;
+    height: 250px;
+    border: 1px solid #f5f5f5;
+    border-radius: 0 0 5px 5px;
+    box-shadow: 1px 1px 1px 1px #f5f5f5;/*阴影*/
+    text-align: center;
+    line-height: 250px;
+    display: none;
+}
+.nav-center-search .content span{
+    font-size: 40px;
+    color: #507daf;
+    
+}
+.nav-center-icon{
+    width: 580px;
+    height: 57px;
+    float: left;
+    
+}
+.nav-center-icon div{
+    width: 110px;
+    height: 55px;
+    text-align: center;
+    line-height: 57px;
+    float: left;
+    font-size: 30px;
+    
+}
+.nav-center-icon div:nth-child(3){/*切换到该项目时的橙色下划线特效*/
+    color: #ff8200;
+    border-bottom: 2px solid #fff;
+}
+.nav-center-icon div:hover{
+    background-color: #f2f2f2;
+}
+.nav-center-zhanhao{
+    width: 282px;
+    height: 30px;
+    float: left;
+    margin-top: 13px;
+
+}
+.nav-center-login{
+    width: 60px;
+    height: 30px;
+    background-color: #ff8200;
+    border-radius: 15px;
+    text-align: center;
+    line-height: 30px;
+    color: #fff;
+    float: left;
+}
+.nav-center-register{
+    width: 60px;
+    height: 30px;
+ 
+    border-radius: 15px;
+    text-align: center;
+    line-height: 30px;
+    color: #ccc;
+    float: left;
+}
+.nav-center-sun{
+    width: 30px;
+    height: 30px;
+    border-radius: 30px;/*圆形*/
+    float: left;
+    background-color: #eee;
+    text-align: center;
+    line-height: 30px;
+    margin-left: 20px;
+}
+.nav-center-liuyan{
+    width: 30px;
+    height: 30px;
+    border-radius: 30px;/*圆形*/
+    float: left;
+    background-color: #ff8200;
+    text-align: center;
+    line-height: 30px;
+    margin-left: 15px;
+    color: #fff;
+}
+.nav-center-barrier{
+    width: 66px;
+    height: 30px;
+    border-radius: 15px;
+    background: #eee;
+    text-align: center;
+    line-height: 30px;
+    float: left;
+    margin-top: 13px;
+}
+
+#main{
+    width: 100%;
+    height: 1000px;
+    background-color: #f5f5f5;
+}
+.main-center{
+    width: 1130px;
+    height: 1000px;
+    background-color: #f5f5f5;
+    margin: 0 auto;
+    position: relative;
+}
+/*主体左侧*/
+.main-left{
+    width: 172px;
+    height: 1000px;
+    background-color: #fff;
+    float: left;
+    
+}
+.main-left div{
+    width: 164px;
+    height: 40px;
+    font-size: 18px;
+    line-height: 40px;
+    margin: 0 auto;
+    
+}
+.main-left div:first-child{
+   margin-top: 20px;
+
+}
+.main-left div:nth-child(1){
+    color:#ff8200;
+
+}
+.main-left div:hover{
+    background-color: #eee;/*背景颜色变深*/
+    cursor: pointer;/*鼠标光标改变*/
+}
+
+.main-left div span{
+    display: inline-block;
+    font-size: 18px;
+    text-align: center;
+    width: 40px;
+}
+/*主体中间*/
+.main-midium{
+    width: 640px;
+    height: 1000px;
+    background-color: #f5f5f5;
+    
+    margin-left: 15px;
+    position: absolute;
+    left: 170px;
+    top: 0;
+}
+.main-top{
+    width: 640px;
+    height: 40px;
+    background-color: #fff;
+
+}
+.main-top div{
+    width: 70px;
+    height: 30px;
+    float: left;
+    margin: 5px 5px 0 5px;
+    text-align: center;
+    line-height: 30px;
+}
+.main-top div:hover{
+    background-color: rgba(255, 130, 0, .1);
+    color: #ff8200;
+    border-radius: 15px;
+    cursor: pointer;
+}
+.main-top div:nth-child(1){
+    color: #ff8200;
+    font-weight: 700;
+
+}
+.main-top div:last-child{
+    font-size: 20px;
+}
+.main-top div:last-child:hover{
+    background-color: #fff;
+    color: #000;
+    cursor: pointer;
+}
+.main-bottom{
+    width: 640px;
+    min-height: 300px;
+    background-color: #fff;
+    margin-top: 15px;
+    float: left;
+}
+.main-bottom-blog{
+    width: 600px;
+    min-height: 400px;/*最小宽度400px，按照内容自适应*/
+    margin: 0 auto;
+    background-color: #fff;
+    
+}
+.main-bottom-blog .title{
+    width: 600px;
+    height: 50px;
+    
+    /*border: 1px solid red;*/
+    padding-top: 20px;
+}
+.main-bottom-blog .title .title-img{
+    width: 50px;
+    height: 50px;
+    border-radius: 50px;
+    float: left;
+    position: relative;
+
+}
+.main-bottom-blog .title .title-img img{/*用户头像*/
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;/*头像变圆了*/
+}
+.main-bottom-blog .title .title-img span{
+    display: inline-block;
+    position: absolute;
+    top: 33px;/*此处把认证符号挪到头像右下方*/
+    left: 33px;
+    color: rgb(0,164,255);
+    
+    font-size: 16px;
+}
+.main-bottom-blog .title .title-name{
+    float: left;
+    width: 450px;
+    height: 40px;
+    margin-top: 5px;
+    margin-left: 15px;
+
+}
+.main-bottom-blog .title .title-name .title-name-top{
+    width: 460px;
+    height: 20px;
+   
+}
+.main-bottom-blog .title .title-name .title-name-top span:nth-child(1){
+    font-weight: 800;
+
+}
+.main-bottom-blog .title .title-name .title-name-top span:nth-child(2){
+    font-weight: 800;
+    color: #ff8200;
+}
+.main-bottom-blog .title .title-name .title-name-top span:nth-child(2){
+    font-weight: 800;
+    color: red;
+}
+.main-bottom-blog .title .title-name .title-name-hour{/*两小时之前*/
+    width: 60px;
+    height: 20px;
+    font-size: 12px;
+    line-height: 20px;
+    color: #ccc;
+    float: left;
+}
+
+.main-bottom-blog .title .title-name .title-name-show{
+    width: 300px;
+    height: 20px;
+    font-size: 12px;
+    line-height: 20px;
+    color: #ccc;
+    float: left;
+}
+.main-bottom-blog .title .title-name-focus{
+    width: 64px;
+    height: 28px;
+    border-radius: 15px;
+    border: 1px solid #ff8200;
+    float: right;
+    text-align: center;
+    line-height: 28px;
+    margin-top: 11px;
+    color: #ff8200;
+    font-size: 14px;
+}
+.title-name-focus span{
+    font-size: 10px;
+}
+.main-bottom-blog .media{
+    width: 540px;
+    min-height: 270px;
+    margin-left: 60px;
+    float: left;
+    
+}
+.main-bottom-blog .media div{
+    width: 540px;
+    min-height: 50px;
+    font-size: 14px;
+    color: #333;
+    word-wrap: break-word;/*要换行*/
+    float: left;
+}
+.main-bottom-blog .media img{
+    width: 132px;
+    height: 156px;
+    border-radius: 8px;
+    float: left;
+}
+.main-bottom-blog .share{
+    width: 600px;
+    height: 40px;
+    margin-top: 10px;
+    float: left;
+}
+.main-bottom-blog .share div{
+    width: 200px;
+    height: 40px;
+    text-align: center;
+    line-height: 40px;
+    float: left;
+    font-size: 16px;
+    text-align: center;
+}
+.main-bottom-blog .share div:hover{
+    color: #ff8200;
+}
+/*主体右侧*/
+.main-right{
+    width: 290px;
+    height: 1000px;
+    float: right;
+}
+.main-right-top{
+    width: 290px;
+    height: 184px;
+    background: url(../images图片类文件夹/bg.jpg);
+    background-size: cover;/*使背景色展示到中央*/
+}
+.main-right-top img{
+    margin-left: 73.5px;
+    margin-top: 20px;
+}
+.main-right-top .login{
+    width: 160px;
+    height: 34px;
+    background-color: #ff8200;
+    color: #fff;
+    font-weight: 800;
+    border-radius: 25px;
+    text-align: center;
+    line-height: 34px;
+    margin-left: 65px;
+    margin-top: 15px;
+}
+.main-right-top .login:hover{
+    background-color: #ff5900;
+    cursor: pointer;/*光标小手*/
+}
+.main-right-top .register{
+    width: 160px;
+    height: 20px;
+    color: #939393;
+    font-size: 14px;
+    margin-top: 10px;
+    margin-left: 65px;
+
+}
+.main-right-top .register a{
+    font-size: 14px;
+    color: #ff8200;
+}
+.main-right-hotsearch{
+    width: 290px;
+    height: 520px;
+    margin-top: 10px;
+    /*background-color: #ff8200;*/
+}
+.main-right-hotsearch .hotsearch{
+    width: 290px;
+    height: 40px;
+    background-color: #fff;
+}
+.main-right-hotsearch .hotsearch .weibo{
+    width: 184px;
+    height: 40px;
+    line-height: 40px;
+    float: left;
+    color: #333;
+    font-size: 14px;
+    margin-left: 20px;
+
+}
+.main-right-hotsearch .hotsearch .refresh{
+    width: 78px;
+    height: 40px;
+    left: 40px;
+    float: left;
+
+}
+.main-right-hotsearch .hotsearch .refresh div{
+    color: #939393;
+    font-size: 13px;
+    line-height: 40px;
+    text-align: center;
+}
+.main-right-hotsearch .hot{
+    width: 290px;
+    height: 40px;
+    line-height: 40px;
+    background-color: #fff;
+    
+    
+
+
+}
+.main-right-hotsearch .title{
+    text-align: left;
+}
+.main-right-hotsearch .hot div:nth-child(1){/*置顶*/
+    width: 30px;
+    height: 40px;
+    color: #ff5900;
+    font-weight: 500;
+    text-align: center;
+    font-size: 18px;
+    float: left;
+}
+.main-right-hotsearch .hot div:nth-child(2){/*热搜内容*/
+    width: 160px;
+    height: 40px;
+    color: #333;
+    /*font-weight: 500;*/
+    text-align: center;
+    font-size: 14px;
+    float: left;
+    overflow: hidden;/*溢出隐藏*/
+    white-space: nowrap;/*多余内容不换行，直接隐藏*/
+    text-overflow: ellipsis;/*多余内容带……*/
+}
+.main-right-hotsearch .hot div:nth-child(3){/*热搜热度*/
+    width: 50px;
+    height: 40px;
+    color: #939393;
+    /*font-weight: 500;加粗*/
+    /*text-align: center;居中对齐*/
+    font-size: 12px;/*字体大小*/
+    float: left;
+    overflow: hidden;/*溢出隐藏*/
+    white-space: nowrap;/*多余内容不换行，直接隐藏*/
+    text-overflow: ellipsis;/*多余内容带……*/
+    margin-left: 15px;
+}
+.main-right-hotsearch .hot div:nth-child(4){/*热*/
+    width: 20px;
+    height: 20px;
+    color: #fff;
+    /*font-weight: 500;加粗*/
+    text-align: center;/*居中对齐*/
+    font-size: 12px;/*字体大小*/
+    background-color: #ff9406;
+    float: left;
+    line-height: 20px;
+    margin-top: 10px;
+    margin-left: 10px;
+    border-radius: 5px;
+}
+.main-right-hotsearch .complete{
+    width: 290px;
+    height: 40px;
+    text-align: center;
+    color: #939393;
+    font-size: 14px;
+    background-color: #fff;
+}
+.main-right-hotsearch .complete:hover{
+    color: #ccc;
+}
+.main-right .main-right-footer{
+    width: 290px;
+    height: 265px;
+    background-color: #f5f5f5;
+    margin-top: 10px;
+    
+}
+.main-right .main-right-footer .help{
+    width: 280px;
+    height: 40px;
+    background-color: #f5f5f5;
+    margin-top: 20px;
+    
+}
+.main-right .main-right-footer .help div{
+    font-size: 13px;
+    color: #606060;
+    margin-bottom: 5px;
+
+}
+.main-right .main-right-footer .help span{
+    font-size: 12px;
+    color: #606060;
+    align-items: center;
+   
+}
+.main-right .main-right-footer .help img{
+    width: 70px;
+}

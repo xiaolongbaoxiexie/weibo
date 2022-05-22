@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+            width: 100px;
+            height: 500px;
+        }
+        *{
+            height: 5500px;
+        }
+    </style>
+</head>
+<body>
+    <div style="background-color: black;" id="box1">啊</div>
+    <script>
+        //左侧固定
+        window.onload=function () {
+				var box1=document.getElementById("box1");
+				/*box1.onmousemove=function (event) {*/
+				document.onmousemove=function (event) {
+					//解决兼容问题
+					event=event||window.event;
+					//获取滚动条滚动的距离,还得考虑兼容问题
+					var sl=document.documentElement.scrollLeft||document.body.scrollLeft;
+                    console.log(sl);
+					//
+                    
+				}
+				
+			}
+    </script>
+</body>
+</html>
